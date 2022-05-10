@@ -1,3 +1,6 @@
+html {
+  font-size: 62.5%;
+}
 body {
   margin: 0;
   padding: 0;
@@ -5,17 +8,46 @@ body {
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.4rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-  background: #323743;
-  padding: 5px 9px;
-  border-radius: 3px;
-  margin: 5px;
+.populate,
+.universe {
+  font-size: 1.4rem;
+  position: relative;
+  padding: 2rem;
 }
 
-hr {
-  border: 1px solid #323743;
-  margin: 40px;
+.populate > fieldset {
+  min-height: 40rem;
+  padding: 2rem;
+}
+
+.populate button,
+.populate input[type=file]::file-selector-button,
+.populate input[type=button]:not(.nevermind) {
+  border-radius: .3rem;
+  border-style: solid;
+  border-width: thin;
+  border-color: lightblue;
+  padding: .5rem 1.2rem;
+  background-color: lightseagreen;
+  color: white;
+  font-size: 1.2rem;
+  min-width: 14rem;
+  max-width: 20rem;
+}
+
+.populate input[type=button].nevermind {
+  border: none;
+  padding: .5rem 1.2rem;
+  background-color: lightgray;
+  color: darkblue;
+  font-size: 1.2rem;
+  min-width: 14rem;
+  max-width: 20rem;
+}
+.populate .submit {
+  position: absolute;
+  bottom: 4rem;
 }
